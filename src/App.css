@@ -1,0 +1,55 @@
+#root {
+    height: 100dvh;
+}
+
+.characters-section {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 12px;
+}
+
+.character-card {
+    padding: 12px;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+
+    border-radius: 10px;
+    background-color: #F3F3F3;
+}
+
+.character-card img {
+    width: 160px;
+    border-radius: 6px;
+}
+
+.character-info {
+    cursor: default;
+    width: 100%;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.character-edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.character-edit-form .form-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.character-edit-form .form-actions button{
+    width: 100%;
+}
+
+@media screen and (max-width : 1400px) {
+    .characters-section {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+}
