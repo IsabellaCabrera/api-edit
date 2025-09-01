@@ -115,6 +115,7 @@ function App() {
                           <select
                             name="status"
                             onChange={(e) => handleInputs(e)}>
+                            <option value="">Select Status</option>
                             <option value="Alive">Alive</option>
                             <option value="Dead">Dead</option>
                             <option value="Unknown">Unknown</option>
