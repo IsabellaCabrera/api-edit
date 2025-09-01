@@ -85,11 +85,13 @@ function App() {
   return (
     <>
       <h1>Rick & Morty Editable</h1>
+      {/* Aquí validamos si el estado loading es igual === a true. Si es verdadero mostramos el mensaje de Cargando. (sino) : mostramos la sección donde irían los personajes */}
       {
         loading ?
           <p>Loading Characters</p>
           :
           <section className='characters-section'>
+            {/* Aquí validamos si hay 1 o más peronsajes. Si es verdadero mostramos los peronaje. (sino) : Mostramos un mensaje de feedback */}
             {charactes.length > 0 ?
               charactes.map((character) => (
                 <article className='character-card' key={character.id}>
