@@ -113,10 +113,11 @@ function App() {
                             value={editForm.species}
                             onChange={(e) => handleInputs(e)} />
                           <select
-                            name="satus"
+                            name="status"
                             onChange={(e) => handleInputs(e)}>
                             <option value="Alive">Alive</option>
                             <option value="Dead">Dead</option>
+                            <option value="Unknown">Unknown</option>
                           </select>
                           <div className='form-actions'>
                             <button onClick={saveCharacter}>Save</button>
